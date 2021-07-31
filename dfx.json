@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "testNoChange": {
-      "main": "src/testNoChange/main.mo",
+    "backend": {
+      "main": "src/backend/main.mo",
       "type": "motoko"
     },
-    "testNoChange_assets": {
+    "frontend": {
       "dependencies": [
-        "testNoChange"
+        "backend"
       ],
       "frontend": {
-        "entrypoint": "src/testNoChange_assets/src/index.html"
+        "entrypoint": "src/frontend/src/index.html"
       },
       "source": [
-        "src/testNoChange_assets/assets",
-        "dist/testNoChange_assets/"
+        "src/frontend/assets",
+        "dist/frontend/"
       ],
       "type": "assets"
     }
