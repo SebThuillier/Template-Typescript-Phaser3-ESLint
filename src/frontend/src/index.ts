@@ -31,14 +31,4 @@ const config = {
     scene: MyGame,
 }
 
-const myfunction = (a: string, b: string) => {
-    const d = a + b
-    for (let i = 0; i < 10; i += 1) {
-        console.log(d)
-    }
-    return 10
-}
-const myName = myfunction('Seb', 'Thuillier')
-console.log(myName)
-
 export default new Phaser.Game(config)
